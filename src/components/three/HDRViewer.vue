@@ -36,7 +36,7 @@ function createTable() {
   const geometry = new THREE.BoxGeometry(1, 0.5, 1)
   const material = new THREE.MeshStandardMaterial({ color: 0x00ff00 })
   tableMesh = new THREE.Mesh(geometry, material)
-  tableMesh.position.set(0, -0.5, 0) // 放在合适位置
+  tableMesh.position.set(0, -0.5, 10) // 放在合适位置  x加往右 y加往上 z加往后面
   scene.add(tableMesh)
 }
 
